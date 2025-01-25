@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #01011b;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1d1d1d;
+    --background: #01011b;
     --foreground: #ededed;
   }
 }
@@ -19,118 +19,62 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* From Uiverse.io by Juanes200122 */ 
+.container {
+  background-color: #414141;
 
-/* From Uiverse.io by Hashir-Ahmed123 */ 
-@keyframes drop {
-  0% {
-    transform: translateY(0px);
+}
+@keyframes bounce {
+  0%,
+  100% {
+    translate: 0px 36px;
   }
   50% {
-    transform: translateY(400px);
+    translate: 0px 46px;
+  }
+}
+@keyframes bounce2 {
+  0%,
+  100% {
+    translate: 0px 46px;
+  }
+  50% {
+    translate: 0px 56px;
+  }
+}
+
+@keyframes umbral {
+  0% {
+    stop-color: #d3a5102e;
+  }
+  50% {
+    stop-color: rgba(211, 165, 16, 0.519);
   }
   100% {
-    transform: translateY(0px);
+    stop-color: #d3a5102e;
   }
 }
-
-.lava-lamp {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  background:  #1d1d1d;
-  border-radius: 50%;
-  overflow: hidden;
+@keyframes partciles {
+  0%,
+  100% {
+    translate: 0px 16px;
+  }
+  50% {
+    translate: 0px 6px;
+  }
 }
-
-.bubble {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #e64980, #ff8787);
-  border-radius: 50%;
-  left: 15px;
-  animation: drop 5s ease-in-out infinite;
+#particles {
+  animation: partciles 4s ease-in-out infinite;
 }
-.bubble1 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #82c91e, #3bc9db);
-  border-radius: 50%;
-  left: 1px;
-  animation: drop 3s ease-in-out infinite;
+#animatedStop {
+  animation: umbral 4s infinite;
 }
-.bubble2 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #7950f2, #f783ac);
-  border-radius: 50%;
-  left: 390px;
-  animation: drop 4s ease-in-out infinite;
+#bounce {
+  animation: bounce 4s ease-in-out infinite;
+  translate: 0px 36px;
 }
-.bubble3 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #cfde00, #04befe);
-  border-radius: 50%;
-  left:380px;
-  animation: drop 7s ease-in-out infinite;
+#bounce2 {
+  animation: bounce2 4s ease-in-out infinite;
+  translate: 0px 46px;
+  animation-delay: 0.5s;
 }
-.bubble4 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #ee7402, #04befe);
-  border-radius: 50%;
-  left:70px;
-  animation: drop 9s ease-in-out infinite;
-}
-.bubble5 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #4481eb, #fe0404);
-  border-radius: 50%;
-  left:140px;
-  animation: drop 4s ease-in-out infinite;
-}
-
-.bubble6 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #44eb4f, #04befe);
-  border-radius: 50%;
-  left:200px;
-  animation: drop 5s ease-in-out infinite;
-}
-.bubble7 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #4481eb, #d0fe04);
-  border-radius: 50%;
-  left:260px;
-  animation: drop 3s ease-in-out infinite;
-}
-.bubble8 {
-  position: absolute;
-  top: 0;
-  width:40px;
-  height:40px;
-  background: linear-gradient(to bottom, #e844eb, #04befe);
-  border-radius: 50%;
-  left:360px;
-  animation: drop 8s ease-in-out infinite;
-}
-
