@@ -8,7 +8,7 @@ const Navbar = () => {
             backgroundSize:"cover",
             backgroundPosition:"center"
         }}></div>
-        <div className='flex flex-col self-center justify-center md:text-2xl mx-2 font-semibold'>
+        <div className='flex flex-col self-center justify-center md:text-2xl mx-2 font-medium'>
             <p>Lumeo</p>
             <p>Studio</p>
         </div>
