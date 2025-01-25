@@ -40,7 +40,7 @@ const Home1 = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between px-20">
+    <div className="h-fit mb-20 flex flex-col md:flex-row justify-between px-20">
      
       <div className="mt-20 h-full flex flex-col text-4xl font-bold md:text-left text-center">
         <p className="text-2xl md:text-7xl text1">The only</p>
@@ -56,7 +56,7 @@ const Home1 = () => {
       <div className=" h-60 md:h-full w-1/2 mt-8 flex flex-col self-center md:self-start">
         <div className="lava-lamp self-center border-2 rounded-2xl relative overflow-hidden">
           {/* Bubbles */}
-          {[...Array(15)].map((_, index) => (
+          {[...Array(30)].map((_, index) => (
             <div
               key={index}
               className={`bubble bubble${(index + 1)%8} absolute rounded-full bg-gradient-to-r from-blue-600 via-yellow-200 to-pink-600`}
