@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #01011b;
+  --foreground: #141414;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #01011b;
+    --background: #141414;
     --foreground: #ededed;
   }
 }
@@ -78,5 +78,33 @@ body {
 @keyframes rotate16 {
   to {
     transform: rotate(360deg);
+  }
+}
+
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #4b82bd;
+  --sb-size: 7px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 21px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 21px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
   }
 }
