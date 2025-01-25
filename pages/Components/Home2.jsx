@@ -141,7 +141,7 @@ const Home2 = () => {
               className="flex flex-row"
               ref={(el) => (listRef.current[index] = el)}>
               {" "}
-              <ImRadioChecked className="self-center px-2 text-3xl" /> {text}
+              🟢 {text}
             </p>
           ))}
         </div>
