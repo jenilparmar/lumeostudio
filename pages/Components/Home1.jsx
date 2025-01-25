@@ -50,7 +50,7 @@ const Home1 = () => {
           "Elevate Your Professionalism"
         </p>
       </div>
-      <div className=" h-60 md:h-full w-1/2  mt-8 flex flex-col  justify-center self-center md:self-start">
+      <div className=" h-60 md:h-full w-full  mt-8 flex flex-col  justify-center self-center md:self-start">
       <div
           
           className='w-full self-center md:w-full h-96 '
