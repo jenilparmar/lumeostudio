@@ -46,9 +46,9 @@ const Home2 = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex flex-col gap-10">
+    <div className="w-full h-fit py-10 flex flex-col md:gap-10">
       <div className="self-center">
-        <h3 ref={headingRef} className="self-center md:text-4xl">
+        <h3 ref={headingRef} className="self-center md:text-4xl text-xl">
           What You'll be Getting?
         </h3>
         <div
@@ -128,7 +128,7 @@ const Home2 = () => {
               id="center"></path>
           </svg>
         </div>
-        <div className="w-10/12 md:w-1/2 self-center flex flex-col items-start md:gap-12 text-lg  md:text-xl p-8">
+        <div className="w-10/12 md:w-1/2 self-center flex flex-col items-start md:gap-12   md:text-xl p-8">
           {[
             "Customized designs tailored to your brand and vision.",
             "Fast-loading websites optimized for user experience.",

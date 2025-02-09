@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 
 const Home1 = () => {
   useEffect(() => {
-    // Animate the text elements one by one
+   
     gsap.from(".text1", {
       opacity: 0,
       y: 30,
@@ -38,7 +38,7 @@ const Home1 = () => {
   }, []);
 
   return (
-    <div className="h-fit mb-20 flex flex-col md:flex-row justify-between px-20">
+    <div className="h-fit md:mb-20 flex flex-col md:flex-row justify-between px-20">
       <div className="mt-20 h-full flex flex-col text-4xl font-bold md:text-left text-center">
         <p className="text-2xl md:text-7xl text1">The only</p>
         <h2 className="text-5xl md:text-9xl bg-gradient-to-r from-blue-600 via-yellow-200 to-pink-600 inline-block text-transparent bg-clip-text text2">
