@@ -9,6 +9,7 @@ export default function Home() {
     <>
 
       <Head>
+        <link rel="icon" className='rounded-full' type="image/png" href="/LS.jpg" />
         <title>Transform Your Online Presence with Lumeo Studio</title>
         <meta name="description" content="Lumeo Studio specializes in creating responsive, fast, and visually stunning websites. Unleash your online business today!" />
         <meta name="keywords" content="web development, SEO, responsive design, fast websites, Lumeo Studio, online presence" />
@@ -27,12 +28,6 @@ export default function Home() {
         <meta name="twitter:description" content="Lumeo Studio specializes in creating responsive, fast, and visually stunning websites. Unleash your online business today!" />
         <meta name="twitter:image" content="/images/lumeo-studio-banner.jpg" />
       </Head>
-      <Head>
- 
-  <link rel="icon" className='rounded-full' type="image/png" href="/LS.jpg" />
-  <title>Transform Your Online Presence with Lumeo Studio</title>
-  <meta name="description" content="Lumeo Studio specializes in creating responsive, fast, and visually stunning websites. Unleash your online business today!" />
-</Head>
       <div className="h-fit">
         <Navbar />
         <Home1 />
